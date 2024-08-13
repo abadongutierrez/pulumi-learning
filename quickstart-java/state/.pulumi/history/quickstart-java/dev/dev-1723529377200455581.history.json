@@ -1,0 +1,23 @@
+{
+    "kind": "destroy",
+    "startTime": 1723529374,
+    "message": "",
+    "environment": {
+        "exec.kind": "cli",
+        "pulumi.arch": "amd64",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.129.0",
+        "updatePlan": "false"
+    },
+    "config": {
+        "pulumi:tags": {
+            "pulumi:template": "aws-java"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1723529377,
+    "resourceChanges": {
+        "delete": 6
+    }
+}

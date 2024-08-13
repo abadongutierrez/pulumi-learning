@@ -1,0 +1,19 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/quickstart-java/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-08-13T00:09:37.199156454-06:00",
+                "magic": "754c2596e98a48b601c099e42087c3a8042e7089feb1db31fe3368617a6dfdcc",
+                "version": "v3.129.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:T2Dt6yVqIGE=:v1:TZL/8UCR7/ELEYe+:juyN69E7qMIIOLUzpvsrTli5PIcd1Q=="
+                }
+            }
+        }
+    }
+}

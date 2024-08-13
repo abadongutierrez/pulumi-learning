@@ -1,0 +1,64 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/quickstart-java/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-08-13T00:09:37.195834722-06:00",
+                "magic": "754c2596e98a48b601c099e42087c3a8042e7089feb1db31fe3368617a6dfdcc",
+                "version": "v3.129.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:T2Dt6yVqIGE=:v1:TZL/8UCR7/ELEYe+:juyN69E7qMIIOLUzpvsrTli5PIcd1Q=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0",
+                    "custom": true,
+                    "id": "0898f299-96f9-44bc-924f-de54b8156c21",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.49.0"
+                    },
+                    "outputs": {
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.49.0"
+                    },
+                    "created": "2024-08-13T06:00:42.6083664Z",
+                    "modified": "2024-08-13T06:00:42.6083664Z"
+                }
+            ],
+            "pending_operations": [
+                {
+                    "resource": {
+                        "urn": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0",
+                        "custom": true,
+                        "id": "0898f299-96f9-44bc-924f-de54b8156c21",
+                        "type": "pulumi:providers:aws",
+                        "inputs": {
+                            "__internal": {},
+                            "skipCredentialsValidation": "false",
+                            "skipRegionValidation": "true",
+                            "version": "6.49.0"
+                        },
+                        "outputs": {
+                            "skipCredentialsValidation": "false",
+                            "skipRegionValidation": "true",
+                            "version": "6.49.0"
+                        },
+                        "created": "2024-08-13T06:00:42.6083664Z",
+                        "modified": "2024-08-13T06:00:42.6083664Z"
+                    },
+                    "type": "deleting"
+                }
+            ]
+        }
+    }
+}

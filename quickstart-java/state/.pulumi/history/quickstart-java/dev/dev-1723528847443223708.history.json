@@ -1,0 +1,23 @@
+{
+    "kind": "update",
+    "startTime": 1723528834,
+    "message": "",
+    "environment": {
+        "exec.kind": "cli",
+        "pulumi.arch": "amd64",
+        "pulumi.os": "linux",
+        "pulumi.version": "v3.129.0",
+        "updatePlan": "false"
+    },
+    "config": {
+        "pulumi:tags": {
+            "pulumi:template": "aws-java"
+        }
+    },
+    "version": 0,
+    "result": "succeeded",
+    "endTime": 1723528847,
+    "resourceChanges": {
+        "create": 6
+    }
+}

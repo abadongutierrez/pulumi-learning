@@ -1,0 +1,326 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/quickstart-java/dev",
+        "latest": {
+            "manifest": {
+                "time": "2024-08-13T00:00:47.432353451-06:00",
+                "magic": "754c2596e98a48b601c099e42087c3a8042e7089feb1db31fe3368617a6dfdcc",
+                "version": "v3.129.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:T2Dt6yVqIGE=:v1:TZL/8UCR7/ELEYe+:juyN69E7qMIIOLUzpvsrTli5PIcd1Q=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::pulumi:pulumi:Stack::quickstart-java-dev",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "bucketEndpoint": "http://my-bucket-4e57a00.s3-website-us-east-1.amazonaws.com",
+                        "bucketName": "my-bucket-4e57a00"
+                    },
+                    "created": "2024-08-13T06:00:40.839397287Z",
+                    "modified": "2024-08-13T06:00:40.839397287Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0",
+                    "custom": true,
+                    "id": "0898f299-96f9-44bc-924f-de54b8156c21",
+                    "type": "pulumi:providers:aws",
+                    "inputs": {
+                        "__internal": {},
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.49.0"
+                    },
+                    "outputs": {
+                        "skipCredentialsValidation": "false",
+                        "skipRegionValidation": "true",
+                        "version": "6.49.0"
+                    },
+                    "created": "2024-08-13T06:00:42.6083664Z",
+                    "modified": "2024-08-13T06:00:42.6083664Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket",
+                    "custom": true,
+                    "id": "my-bucket-4e57a00",
+                    "type": "aws:s3/bucket:Bucket",
+                    "inputs": {
+                        "__defaults": [
+                            "acl",
+                            "bucket",
+                            "forceDestroy"
+                        ],
+                        "acl": "private",
+                        "bucket": "my-bucket-4e57a00",
+                        "forceDestroy": false,
+                        "website": {
+                            "__defaults": [],
+                            "errorDocument": "error.html",
+                            "indexDocument": "index.html"
+                        }
+                    },
+                    "outputs": {
+                        "accelerationStatus": "",
+                        "acl": "private",
+                        "arn": "arn:aws:s3:::my-bucket-4e57a00",
+                        "bucket": "my-bucket-4e57a00",
+                        "bucketDomainName": "my-bucket-4e57a00.s3.amazonaws.com",
+                        "bucketRegionalDomainName": "my-bucket-4e57a00.s3.amazonaws.com",
+                        "corsRules": [],
+                        "forceDestroy": false,
+                        "grants": [],
+                        "hostedZoneId": "Z3AQBSTGFYJSTF",
+                        "id": "my-bucket-4e57a00",
+                        "lifecycleRules": [],
+                        "loggings": [],
+                        "objectLockConfiguration": null,
+                        "region": "us-east-1",
+                        "replicationConfiguration": null,
+                        "requestPayer": "BucketOwner",
+                        "serverSideEncryptionConfiguration": {
+                            "rule": {
+                                "applyServerSideEncryptionByDefault": {
+                                    "kmsMasterKeyId": "",
+                                    "sseAlgorithm": "AES256"
+                                },
+                                "bucketKeyEnabled": false
+                            }
+                        },
+                        "versioning": {
+                            "enabled": false,
+                            "mfaDelete": false
+                        },
+                        "website": {
+                            "errorDocument": "error.html",
+                            "indexDocument": "index.html",
+                            "redirectAllRequestsTo": "",
+                            "routingRules": ""
+                        },
+                        "websiteDomain": "s3-website-us-east-1.amazonaws.com",
+                        "websiteEndpoint": "my-bucket-4e57a00.s3-website-us-east-1.amazonaws.com"
+                    },
+                    "parent": "urn:pulumi:dev::quickstart-java::pulumi:pulumi:Stack::quickstart-java-dev",
+                    "provider": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0::0898f299-96f9-44bc-924f-de54b8156c21",
+                    "propertyDependencies": {
+                        "website": []
+                    },
+                    "created": "2024-08-13T06:00:45.626846489Z",
+                    "modified": "2024-08-13T06:00:45.626846489Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::publicAccessBlock",
+                    "custom": true,
+                    "id": "my-bucket-4e57a00",
+                    "type": "aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock",
+                    "inputs": {
+                        "__defaults": [
+                            "blockPublicPolicy",
+                            "ignorePublicAcls",
+                            "restrictPublicBuckets"
+                        ],
+                        "blockPublicAcls": false,
+                        "blockPublicPolicy": false,
+                        "bucket": "my-bucket-4e57a00",
+                        "ignorePublicAcls": false,
+                        "restrictPublicBuckets": false
+                    },
+                    "outputs": {
+                        "blockPublicAcls": false,
+                        "blockPublicPolicy": false,
+                        "bucket": "my-bucket-4e57a00",
+                        "id": "my-bucket-4e57a00",
+                        "ignorePublicAcls": false,
+                        "restrictPublicBuckets": false
+                    },
+                    "parent": "urn:pulumi:dev::quickstart-java::pulumi:pulumi:Stack::quickstart-java-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                    ],
+                    "provider": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0::0898f299-96f9-44bc-924f-de54b8156c21",
+                    "propertyDependencies": {
+                        "blockPublicAcls": [],
+                        "bucket": [
+                            "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                        ]
+                    },
+                    "created": "2024-08-13T06:00:46.328790788Z",
+                    "modified": "2024-08-13T06:00:46.328790788Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::aws:s3/bucketOwnershipControls:BucketOwnershipControls::ownershipControls",
+                    "custom": true,
+                    "id": "my-bucket-4e57a00",
+                    "type": "aws:s3/bucketOwnershipControls:BucketOwnershipControls",
+                    "inputs": {
+                        "__defaults": [],
+                        "bucket": "my-bucket-4e57a00",
+                        "rule": {
+                            "__defaults": [],
+                            "objectOwnership": "ObjectWriter"
+                        }
+                    },
+                    "outputs": {
+                        "bucket": "my-bucket-4e57a00",
+                        "id": "my-bucket-4e57a00",
+                        "rule": {
+                            "objectOwnership": "ObjectWriter"
+                        }
+                    },
+                    "parent": "urn:pulumi:dev::quickstart-java::pulumi:pulumi:Stack::quickstart-java-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                    ],
+                    "provider": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0::0898f299-96f9-44bc-924f-de54b8156c21",
+                    "propertyDependencies": {
+                        "bucket": [
+                            "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                        ],
+                        "rule": []
+                    },
+                    "created": "2024-08-13T06:00:46.70454881Z",
+                    "modified": "2024-08-13T06:00:46.70454881Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::aws:s3/bucketObject:BucketObject::error.html",
+                    "custom": true,
+                    "id": "error.html",
+                    "type": "aws:s3/bucketObject:BucketObject",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDestroy",
+                            "key"
+                        ],
+                        "acl": "public-read",
+                        "bucket": "my-bucket-4e57a00",
+                        "contentType": "text/html",
+                        "forceDestroy": false,
+                        "key": "error.html",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "c44067f5952c0a294b673a41bacd8c17",
+                            "hash": "6cc7612e0b14d37fdfba67c62aca5de7b0ae5f64aee4c72e792e16707d169b77",
+                            "path": "./error.html"
+                        }
+                    },
+                    "outputs": {
+                        "acl": "public-read",
+                        "arn": "arn:aws:s3:::my-bucket-4e57a00/error.html",
+                        "bucket": "my-bucket-4e57a00",
+                        "bucketKeyEnabled": false,
+                        "cacheControl": "",
+                        "contentDisposition": "",
+                        "contentEncoding": "",
+                        "contentLanguage": "",
+                        "contentType": "text/html",
+                        "etag": "e352d6a8fed33aebfe5b1f8b4f84e309",
+                        "forceDestroy": false,
+                        "id": "error.html",
+                        "key": "error.html",
+                        "metadata": {},
+                        "objectLockLegalHoldStatus": "",
+                        "objectLockMode": "",
+                        "objectLockRetainUntilDate": "",
+                        "serverSideEncryption": "AES256",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "c44067f5952c0a294b673a41bacd8c17",
+                            "hash": "6cc7612e0b14d37fdfba67c62aca5de7b0ae5f64aee4c72e792e16707d169b77",
+                            "path": "./error.html"
+                        },
+                        "storageClass": "STANDARD",
+                        "versionId": "",
+                        "websiteRedirect": ""
+                    },
+                    "parent": "urn:pulumi:dev::quickstart-java::pulumi:pulumi:Stack::quickstart-java-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::publicAccessBlock",
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucketOwnershipControls:BucketOwnershipControls::ownershipControls",
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                    ],
+                    "provider": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0::0898f299-96f9-44bc-924f-de54b8156c21",
+                    "propertyDependencies": {
+                        "acl": [],
+                        "bucket": [
+                            "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                        ],
+                        "contentType": [],
+                        "source": []
+                    },
+                    "created": "2024-08-13T06:00:47.075243614Z",
+                    "modified": "2024-08-13T06:00:47.075243614Z"
+                },
+                {
+                    "urn": "urn:pulumi:dev::quickstart-java::aws:s3/bucketObject:BucketObject::index.html",
+                    "custom": true,
+                    "id": "index.html",
+                    "type": "aws:s3/bucketObject:BucketObject",
+                    "inputs": {
+                        "__defaults": [
+                            "forceDestroy",
+                            "key"
+                        ],
+                        "acl": "public-read",
+                        "bucket": "my-bucket-4e57a00",
+                        "contentType": "text/html",
+                        "forceDestroy": false,
+                        "key": "index.html",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "c44067f5952c0a294b673a41bacd8c17",
+                            "hash": "4dd2f16276caea0a3573ab129be196973c696452b578f3a7b7c007803d8d870a",
+                            "path": "./index.html"
+                        }
+                    },
+                    "outputs": {
+                        "acl": "public-read",
+                        "arn": "arn:aws:s3:::my-bucket-4e57a00/index.html",
+                        "bucket": "my-bucket-4e57a00",
+                        "bucketKeyEnabled": false,
+                        "cacheControl": "",
+                        "contentDisposition": "",
+                        "contentEncoding": "",
+                        "contentLanguage": "",
+                        "contentType": "text/html",
+                        "etag": "fef3ba5fbdd0cc2d30462b7aed5b7a8e",
+                        "forceDestroy": false,
+                        "id": "index.html",
+                        "key": "index.html",
+                        "metadata": {},
+                        "objectLockLegalHoldStatus": "",
+                        "objectLockMode": "",
+                        "objectLockRetainUntilDate": "",
+                        "serverSideEncryption": "AES256",
+                        "source": {
+                            "4dabf18193072939515e22adb298388d": "c44067f5952c0a294b673a41bacd8c17",
+                            "hash": "4dd2f16276caea0a3573ab129be196973c696452b578f3a7b7c007803d8d870a",
+                            "path": "./index.html"
+                        },
+                        "storageClass": "STANDARD",
+                        "versionId": "",
+                        "websiteRedirect": ""
+                    },
+                    "parent": "urn:pulumi:dev::quickstart-java::pulumi:pulumi:Stack::quickstart-java-dev",
+                    "dependencies": [
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucketOwnershipControls:BucketOwnershipControls::ownershipControls",
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket",
+                        "urn:pulumi:dev::quickstart-java::aws:s3/bucketPublicAccessBlock:BucketPublicAccessBlock::publicAccessBlock"
+                    ],
+                    "provider": "urn:pulumi:dev::quickstart-java::pulumi:providers:aws::default_6_49_0::0898f299-96f9-44bc-924f-de54b8156c21",
+                    "propertyDependencies": {
+                        "acl": [],
+                        "bucket": [
+                            "urn:pulumi:dev::quickstart-java::aws:s3/bucket:Bucket::my-bucket"
+                        ],
+                        "contentType": [],
+                        "source": []
+                    },
+                    "created": "2024-08-13T06:00:47.099270399Z",
+                    "modified": "2024-08-13T06:00:47.099270399Z"
+                }
+            ]
+        }
+    }
+}
